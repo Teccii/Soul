@@ -1,0 +1,1 @@
+SMODS.Rarity:take_ownership('Legendary', { default_weight = 0.003 }, true)

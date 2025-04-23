@@ -1,0 +1,18 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 10
+
+# Add Legendary to the Pool
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS _ "src/game_object.lua"]'''
+pattern = '''
+{ key = "Common" },
+{ key = "Uncommon" },
+{ key = "Rare" },
+'''
+position = "after"
+payload = '''{ key = "Legendary" }, '''
+match_indent = true
+times = 1
